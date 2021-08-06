@@ -1,6 +1,7 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
+@import url(../font-awesome/font-awesome.min.css);
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -10,8 +11,8 @@
 
 /*===== Colores =====*/
 :root {
-  --second-color: #E55947;
-  --second-color-alt: #D2321E;
+  --first-color: #E55947;
+  --first-color-alt: #D2321E;
   --white-color: #FAFAFF;
   --dark-color: #101010;
   --dark-color-light: #606060;
@@ -143,7 +144,7 @@ img {
   .nav__menu {
     position: fixed;
     top: var(--header-height);
-    right: 0;
+    right: -100%;  /* show */
     width: 80%;
     padding: 2rem;
     background-color: var(--white-color);
@@ -160,20 +161,76 @@ img {
   font-weight: var(--font-semi);
 }
 .nav__link:hover {
-  /* color: var(--first-color); */
-  color: #D2321E;
+  color: var(--first-color);
+ 
 }
 .nav__logo {
   font-weight: var(--font-bold);
 }
-/*=== Show menu ===*/
+.nav__cart {
+  font-size: 1.5rem;
+  margin-right: var(--mb-2);
+}
+.nav__toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 
+/*=== Show menu ===*/
+.show {
+  right: 0;
+}
+
+.active {
+  color: var(--first-color);
+}
 
 /*===== HOME =====*/
+.home {
+  background-color: var(--gray-color);
+}
+.home__container {
+  height: calc(100vh - var(--header-height));
+}
+.home__data {
+  padding-top: 6rem;
+}
 
+.home__title {
+  align-self: center;
+  font-size: var(--big-font-size);
+  line-height: 1;  /*espaçamento entre as linhas*/
+  letter-spacing: .5rem;
+  margin-bottom: 4rem;
+}
+
+.home__title span {
+  font-size: var(--h1-font-size);
+}
+
+.home__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 260px;
+}
 
 /*BUTTONS*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  padding: 1rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi);
+  transition: .3s;
+  
+}
 
+.button:hover {
+  background-color: var(--first-color-alt);
+
+}
 
 /*===== COLLECTION =====*/
 
