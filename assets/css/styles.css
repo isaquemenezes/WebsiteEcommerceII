@@ -123,6 +123,7 @@ img {
   margin-left: var(--mb-3);
   margin-right: var(--mb-3);
 }
+
 .l-header {
   width: 100%;
   position: fixed;
@@ -163,17 +164,20 @@ img {
   color: var(--dark-color);
   font-weight: var(--font-semi);
 }
+
 .nav__link:hover {
   color: var(--first-color);
- 
 }
+
 .nav__logo {
   font-weight: var(--font-bold);
 }
+
 .nav__cart {
   font-size: 1.5rem;
   margin-right: var(--mb-2);
 }
+
 .nav__toggle {
   font-size: 1.5rem;
   cursor: pointer;
@@ -192,9 +196,11 @@ img {
 .home {
   background-color: var(--gray-color);
 }
+
 .home__container {
   height: calc(100vh - var(--header-height));
 }
+
 .home__data {
   padding-top: 6rem;
 }
@@ -202,7 +208,7 @@ img {
 .home__title {
   align-self: center;
   font-size: var(--big-font-size);
-  line-height: 1;  /*espaçamento entre as linhas*/
+  line-height: 1;  
   letter-spacing: .5rem;
   margin-bottom: 4rem;
 }
@@ -239,6 +245,7 @@ img {
 .collection__container {
   row-gap: 2rem;    /* espaçamento em linhas */
 }
+
 .collection__box {   
   display: flex; 
   justify-content: space-between;  
@@ -247,12 +254,15 @@ img {
   background-color: var(--gray-color);
   transition: .3s;
 }
+
 .collection__box:hover {
   transform: translateY(-.5rem) ;
 }
+
 .collection__img {
   width: 100px;
 }
+
 .collection__title {
   font-size: var(--h1-font-size);
   line-height: 1.2rem;
@@ -261,6 +271,7 @@ img {
   font-weight: var(--font-semi);
 
 }
+
 .collection__subtitle {
   font-size: var(--h2-font-size);
   color: var(--dark-color-light);
@@ -271,6 +282,7 @@ img {
   font-size: var(--small-font-size);
   color: var(--dark-color-light);
 }
+
 .collection__view:hover {
   text-decoration: underline;
 }
@@ -303,8 +315,8 @@ img {
   color: var(--white-color);
   padding: .3rem .75rem;
   font-size: var(--small-font-size);
-
 }
+
 .featured__data {
   text-align: center;
 }
@@ -322,9 +334,10 @@ img {
 
 /*===== OFFER =====*/
 .offer__bg {
-  background: url(../assets/img/offer.jpg) no-repeat center/cover;
+  background: url(../../assets/img/offer.jpg) no-repeat center/cover;
   text-align: center;
 }
+
 .offer__data {
   padding: 3.5rem .25rem;
   background: rgba(0, 0, 0, .5);
@@ -342,25 +355,25 @@ img {
 .offer__description {
   margin-bottom: var(--mb-2);
   letter-spacing: .2rem;
-
 }
 
 /*===== NEW ARRIVALS =====*/
 .new__container {
   row-gap: 2rem;
 }
+
 .new__box {
   position: relative;
   display: flex;
   justify-content: center;
   background-color: var(--gray-color);
   overflow: hidden;
-
 }
 
 .new__box:hover .new__link{
   bottom: 0;
 }
+
 .new__link {
   position: absolute; 
   display: flex;
@@ -402,14 +415,17 @@ img {
   row-gap: 2rem;
   padding: 1.5rem 0;
 }
+
 .sponsors__logo {
   display: flex;
   justify-content: center;
 }
+
 .sponsors__logo img {
   width: 80px;
   filter: opacity(70%);
 }
+
 .sponsors__logo img:hover {
   filter: none;
 }
@@ -419,29 +435,37 @@ img {
   background-color: var(--dark-color);
   color: var(--white-color);
 }
+
 .footer__container {
   row-gap: 1.5rem;
   margin-bottom: var(--mb-4);
 }
+
 .footer__title {
   margin-bottom: var(--mb-1);
 }
+
 .footer__deal {
   margin-bottom: var(--mb-2);
 }
+
 .footer__store {
   width: 100px;
 }
+
 .footer__link, .footer__social {
   color: var(--dark-color-light);
 }
+
 .footer__link:hover {
   text-decoration: underline;
 }
+
 .footer__social {
   font-size: 1.3rem;
   margin-right: var(--mb-1);
 }
+
 .footer__copy {
   border-top: 1px solid var(--dark-color-light);
   padding-top: 3rem;
@@ -450,6 +474,7 @@ img {
   font-size: var(--small-font-size);
 
 }
+
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px) {
    body {
@@ -468,13 +493,16 @@ img {
   .nav__menu {
     margin-left: auto;
   }
+
   .nav__list {
     display: flex;
   }
+
   .nav__item {
     margin-left: var(--mb-4);
     margin-bottom: 0;
   }
+
   .nav__toggle {
     display: none;
   }
@@ -483,27 +511,31 @@ img {
    
     height: 100vh;
   }
+
   .home__data {
     padding: 0;
     height: max-content;
     align-self: center;
   }
+
   .home__title{
     line-height: .8;
     letter-spacing: 1.5rem;
   }
+
   .home__img {
     width:370px;
   }
-
 
   .collection__container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
   }
+
   .collection__box {
     padding: .5rem 3rem 0;
   }
+
   .collection__img {
     width: 130px;
   }
@@ -545,6 +577,6 @@ img {
   }
 
   .home__img {
-    margin: 15%;
+    right: 15%;
   } 
 }
