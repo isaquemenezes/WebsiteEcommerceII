@@ -6,4 +6,8 @@ Beautiful responsive ecommerce website, it has multiple sections such as a home,
 Don't forget to join the channel for more videos like this.
 [Bedimcode](https://www.youtube.com/c/Bedimcode)
 
-<img src="index.png">
+<img src="index.png" />
+
+## Responsive 
+<img src="index_mobile.png" />
+
