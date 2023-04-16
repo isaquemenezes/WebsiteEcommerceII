@@ -9,5 +9,5 @@ Don't forget to join the channel for more videos like this.
 <img src="index.png" />
 
 ## Responsive 
-<img src="index_mobile.png" />
+<img src="index_moble.png" />
 
